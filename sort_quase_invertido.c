@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 #include<string.h>
-#include"algoritmos_sort.h"
+#include"algorithms_sort.h"
 
 //#define tamanho 9000
 #define quantidade 6
@@ -97,7 +97,7 @@ for (int i = 0; i < 3; i++) {
       break;
     }
     case 1:{
-      tamanho=6000;
+      tamanho=5000;
       // Leitura, preenchimento e ordação por meio do Bubble Sort
       int vetor[tamanho];
       for (int j = 0; j < quantidade; j++) {
@@ -164,7 +164,7 @@ for (int i = 0; i < 3; i++) {
       break;
     }
     case 2:{
-      tamanho=9000;
+      tamanho=7000;
       // Leitura, preenchimento e ordação por meio do Bubble Sort
       int vetor[tamanho];
       for (int j = 0; j < quantidade; j++) {
@@ -244,8 +244,9 @@ for (int i = 0; i < 3; i++) {
 
 
 FILE* csv;
-sprintf(endereco,"%s%i%s","outputs/tempo_de_processador_quase_invertido",tamanho,".csv");
+sprintf(endereco,"%s","outputs/tempo_de_processador_quase_invertido.csv");
 csv = fopen(endereco,"wt");
+fprintf(csv,"Bubble Sort;Insertion Sort;Quick Sort;\n");
 for (int j = 1; j < quantidade; j++) {
   //fprintf(csv,"%i;\n",j);
   for (int i = 0; i < 3; i++) {

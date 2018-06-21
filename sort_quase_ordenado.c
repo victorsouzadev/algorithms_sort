@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 #include<string.h>
-#include"algoritmos_sort.h"
+#include"algorithms_sort.h"
 
 //#define tamanho 9000
 #define quantidade 6
@@ -16,14 +16,14 @@ int main(void){
   int tamanho = 0;
   char endereco[50];
 
-// Gerar txt com vetores quase_invertido
+// Gerar txt com vetores quase_ordenado
 /*
 for (int j = 0; j < quantidade; j++) {
   FILE* arq;
-  sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+  sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
   arq = fopen(endereco, "wt");
   for (int i = 0; i < tamanho;i++) {
-     fprintf(arq,"%d\n",rand() % 200000);                //quase_invertido em todas posições do vetor
+     fprintf(arq,"%d\n",rand() % 200000);                //quase_ordenado em todas posições do vetor
   }
 }
 */
@@ -39,7 +39,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -61,7 +61,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -79,7 +79,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -97,13 +97,13 @@ for (int i = 0; i < 3; i++) {
       break;
     }
     case 1:{
-      tamanho=6000;
+      tamanho=5000;
       // Leitura, preenchimento e ordação por meio do Bubble Sort
       int vetor[tamanho];
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -125,7 +125,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -143,7 +143,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -164,13 +164,13 @@ for (int i = 0; i < 3; i++) {
       break;
     }
     case 2:{
-      tamanho=9000;
+      tamanho=7000;
       // Leitura, preenchimento e ordação por meio do Bubble Sort
       int vetor[tamanho];
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -191,7 +191,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -210,7 +210,7 @@ for (int i = 0; i < 3; i++) {
       for (int j = 0; j < quantidade; j++) {
         //Abrir arquivo pra leitura
         FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_ordenado/",j,"_",tamanho,".txt");
         readArq = fopen(endereco,"r");
 
         //Preencher vetor
@@ -244,8 +244,9 @@ for (int i = 0; i < 3; i++) {
 
 
 FILE* csv;
-sprintf(endereco,"%s%i%s","outputs/tempo_de_processador_quase_invertido",tamanho,".csv");
+sprintf(endereco,"%s","outputs/tempo_de_processador_quase_ordenado.csv");
 csv = fopen(endereco,"wt");
+fprintf(csv,"Bubble Sort;Insertion Sort;Quick Sort;\n");
 for (int j = 1; j < quantidade; j++) {
   //fprintf(csv,"%i;\n",j);
   for (int i = 0; i < 3; i++) {
