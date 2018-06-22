@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 #include<string.h>
-#include"algorithms_sort.h"
+#include"algorithms_sort_assignments.h"
 
 //#define tamanho 9000
 #define quantidade 6
@@ -49,10 +49,9 @@ for (int i = 0; i < 3; i++) {
 
         ///Ordenar e obter tempo
 
-        start = clock();
-        bubble_sort(vetor,tamanho);
-        stop = clock();
-        tempos[0][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+        
+        int atribuicoes = bubble_sort(vetor,tamanho);
+        tempos[0][j] = atribuicoes;
       }
 
 
@@ -70,10 +69,9 @@ for (int i = 0; i < 3; i++) {
         }
 
         ///Ordenar e obter tempo
-        start = clock();
-        insertion_sort(vetor,tamanho);
-        stop = clock();
-        tempos[1][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+         ///Ordenar e obter atribuições
+        int atribuicoes = insertion_sort(vetor,tamanho);
+        tempos[1][j] = atribuicoes;
       }
       // Leitura, preenchimento e ordação de vetor por meio do Quick Sort
       for (int j = 0; j < quantidade; j++) {
@@ -87,11 +85,9 @@ for (int i = 0; i < 3; i++) {
           fscanf(readArq,"%i\n",&vetor[i]);
         }
 
-        ///Ordenar e obter tempo
-        start = clock();
-        quick_sort(vetor,0,tamanho);
-        stop = clock();
-        tempos[2][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+        ///Ordenar e obter atribuições
+        int atribuicoes = quick_sort(vetor,0,tamanho);
+        tempos[2][j] = atribuicoes;
       }
 
       break;
@@ -111,12 +107,9 @@ for (int i = 0; i < 3; i++) {
           fscanf(readArq,"%i\n",&vetor[i]);
         }
 
-        ///Ordenar e obter tempo
-
-        start = clock();
-        bubble_sort(vetor,tamanho);
-        stop = clock();
-        tempos[3][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+       ///Ordenar e obter atribuições
+        int atribuicoes = bubble_sort(vetor,tamanho);
+        tempos[3][j] = atribuicoes;
       }
 
 
@@ -133,11 +126,9 @@ for (int i = 0; i < 3; i++) {
           fscanf(readArq,"%i\n",&vetor[i]);
         }
 
-        ///Ordenar e obter tempo
-        start = clock();
-        insertion_sort(vetor,tamanho);
-        stop = clock();
-        tempos[4][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+        ///Ordenar e obter atribuições
+        int atribuicoes = insertion_sort(vetor,tamanho);
+        tempos[4][j] = atribuicoes;
       }
       // Leitura, preenchimento e ordação de vetor por meio do Quick Sort
       for (int j = 0; j < quantidade; j++) {
@@ -152,17 +143,16 @@ for (int i = 0; i < 3; i++) {
         }
 
         ///Ordenar e obter tempo
-        start = clock();
-        quick_sort(vetor,0,tamanho);
-        stop = clock();
-        tempos[5][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+         ///Ordenar e obter atribuições
+        int atribuicoes = quick_sort(vetor,0,tamanho);
+        tempos[5][j] = atribuicoes;
+
       }
-
-
 
 
       break;
     }
+
     case 2:{
       tamanho=7000;
       // Leitura, preenchimento e ordação por meio do Bubble Sort
@@ -178,33 +168,12 @@ for (int i = 0; i < 3; i++) {
           fscanf(readArq,"%i\n",&vetor[i]);
         }
 
-        ///Ordenar e obter tempo
-
-        start = clock();
-        bubble_sort(vetor,tamanho);
-        stop = clock();
-        tempos[6][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+       ///Ordenar e obter atribuições
+        int atribuicoes = bubble_sort(vetor,tamanho);
+        tempos[6][j] = atribuicoes;
       }
 
 
-      // Leitura, preenchimento e ordação de vetor por meio do insertion_sort
-      for (int j = 0; j < quantidade; j++) {
-        //Abrir arquivo pra leitura
-        FILE* readArq;
-        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
-        readArq = fopen(endereco,"r");
-
-        //Preencher vetor
-        for (int i = 0; i < tamanho;i++) {
-          fscanf(readArq,"%i\n",&vetor[i]);
-        }
-
-        ///Ordenar e obter tempo
-        start = clock();
-        insertion_sort(vetor,tamanho);
-        stop = clock();
-        tempos[7][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
-      }
 
       // Leitura, preenchimento e ordação de vetor por meio do Quick Sort
       for (int j = 0; j < quantidade; j++) {
@@ -218,22 +187,34 @@ for (int i = 0; i < 3; i++) {
           fscanf(readArq,"%i\n",&vetor[i]);
         }
 
-        ///Ordenar e obter tempo
-        start = clock();
-        quick_sort(vetor,0,tamanho);
-        stop = clock();
-        tempos[8][j] = (stop - start);//(CLOCKS_PER_SEC / 1000);
+        ///Ordenar e obter atribuições
+        int atribuicoes = insertion_sort(vetor,tamanho);
+        tempos[7][j] = atribuicoes;
       }
+      // Leitura, preenchimento e ordação de vetor por meio do Quick Sort
+      for (int j = 0; j < quantidade; j++) {
+        //Abrir arquivo pra leitura
+        FILE* readArq;
+        sprintf(endereco,"%s%d%s%d%s","inputs/quase_invertido/",j,"_",tamanho,".txt");
+        readArq = fopen(endereco,"r");
+
+        //Preencher vetor
+        for (int i = 0; i < tamanho;i++) {
+          fscanf(readArq,"%i\n",&vetor[i]);
+        }
+
+        ///Ordenar e obter tempo
+         ///Ordenar e obter atribuições
+        int atribuicoes = quick_sort(vetor,0,tamanho);
+        tempos[8][j] = atribuicoes;
 
 
-
-
-
+      }
       break;
     }
 
 
-}
+  }
 }
 
 
@@ -244,8 +225,7 @@ for (int i = 0; i < 3; i++) {
 
 
 FILE* csv;
-sprintf(endereco,"%s","outputs/tempo_de_processador_quase_invertido.csv");
-csv = fopen(endereco,"wt");
+csv = fopen("outputs/atribuicoes_quase_invertido.csv","wt");
 fprintf(csv,"Bubble Sort;Insertion Sort;Quick Sort;\n");
 for (int j = 1; j < quantidade; j++) {
   //fprintf(csv,"%i;\n",j);
