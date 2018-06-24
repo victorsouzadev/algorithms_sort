@@ -14,6 +14,7 @@
 \usepackage{algpseudocode}
 \newcommand{\vars}{\texttt}
 \newcommand{\func}{\textrm}
+\algnewcommand\And{\textbf{and}}
 \let\oldReturn\Return
 \renewcommand{\Return}{\State\oldReturn}
 
@@ -86,6 +87,29 @@
 		\end{algorithmic}
 	\end{algorithm}
 	
+	
+	\begin{algorithm}
+		\caption{Insertion Sort}
+		\begin{algorithmic}[1]
+
+			\Function{partition}{$A, p, r$}		
+				\For{$j = 2$ to $ n $ }
+					\State $temp = A[j]$	
+					\State $i = j - 1$		
+										
+					\While{$ ( i > 0 ) $ \And $ ( A[i] > temp ) $} 
+						\State$A[i + 1] = A[i]$
+						\State$i = i - 1 $
+					\EndWhile
+					\State$A[i + 1] = temp$				
+				\EndFor
+				
+				
+			\EndFunction
+			
+			
+		\end{algorithmic}
+	\end{algorithm}
 
 
 
