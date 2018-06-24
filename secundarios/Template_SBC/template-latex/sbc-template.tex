@@ -15,6 +15,7 @@
 \newcommand{\vars}{\texttt}
 \newcommand{\func}{\textrm}
 \algnewcommand\And{\textbf{and}}
+\algnewcommand\To{\textbf{to }}
 \let\oldReturn\Return
 \renewcommand{\Return}{\State\oldReturn}
 
@@ -62,7 +63,7 @@
 			\Function{partition}{$A, p, r$}		
 				\State $x = A[r] $	
 				\State $i = p - 1$
-				\For{$j = p$ to $r - 1$ }
+				\For{$j = p$  \To $r - 1$ }
 					\If{$A[j] <= x $}
 						\State$temp = A[i]$
 						\State$A[i] = A[j]$
@@ -92,8 +93,8 @@
 		\caption{Insertion Sort}
 		\begin{algorithmic}[1]
 
-			\Function{partition}{$A, p, r$}		
-				\For{$j = 2$ to $ n $ }
+			\Function{INSERTIONSORT}{$A, p, r$}		
+				\For{$j = 2$ \To $ n $ }
 					\State $temp = A[j]$	
 					\State $i = j - 1$		
 										
@@ -111,6 +112,25 @@
 		\end{algorithmic}
 	\end{algorithm}
 
+
+	\begin{algorithm}
+		\caption{Bubble Sort}
+		\begin{algorithmic}[1]
+			\Function{BUBBLESORT}{$A, n$}		
+				\For{$ i = 0 $ \To $ i < (n - 1) $ }
+					\For{$ j = 0 $ \To $ j < (n - i - 1) $ }
+						\If{$A[j] > A[j + 1] $}
+							\State $temp = A[j]$		
+							\State $A[j] = A[j+1]$			
+							\State $A[j+1] = temp$				
+						\EndIf
+					\EndFor						
+				\EndFor				
+			\EndFunction
+			
+			
+		\end{algorithmic}
+	\end{algorithm}
 
 
 
