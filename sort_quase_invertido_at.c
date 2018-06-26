@@ -7,9 +7,9 @@
 //#define tamanho 9000
 #define quantidade 6
 #define quantidade 6
-#define menorTamanho 3000
-#define maiorTamanho 7000
-#define intervalo 2000
+#define menorTamanho 5000
+#define maiorTamanho 15000
+#define intervalo 5000
 
 int main(void){
 
@@ -109,7 +109,7 @@ FILE* csv;
 csv = fopen("outputs/atribuicoes_quase_invertido.csv","wt");
 fprintf(csv,"Bubble Sort\tInsertion Sort\tQuick Sort\t\n");
 for (int j = 1; j < quantidade; j++) {
-  //fprintf(csv,"%i;\n",j);
+  fprintf(csv,"5000\t%i\t",j;
   for (int i = 0; i < 3; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
@@ -118,7 +118,7 @@ for (int j = 1; j < quantidade; j++) {
 }
 
 for (int j = 1; j < quantidade; j++) {
-  //fprintf(csv,"%i;\n",j);
+  fprintf(csv,"10000\t%i\t",(j+5);
   for (int i = 3 ; i < 6; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
@@ -126,7 +126,7 @@ for (int j = 1; j < quantidade; j++) {
   fprintf(csv,"\n");
 }
 for (int j = 1; j < quantidade; j++) {
-  //fprintf(csv,"%i;\n",j);
+  fprintf(csv,"15000\t%i\t",(j+10);
   for (int i = 6 ; i < 9; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }

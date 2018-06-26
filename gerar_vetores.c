@@ -5,11 +5,11 @@
 #include"algorithms_sort.h"
 
 //#define tamanho 3000
-#define menorTamanho 3000
-#define maiorTamanho 7000
-#define intervalo 2000
+#define menorTamanho 5000
+#define maiorTamanho 15000
+#define intervalo 5000
 #define quantidade 6
-#define dispersao 30000
+#define dispersao 50000
 
 int main(void){
 
