@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.20)  23 JUN 2018 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.20)  25 JUN 2018 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,88 +608,55 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 51.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-
-LaTeX Warning: Reference `fig:exampleFig1' on page 3 undefined on input line 18
-9.
-
-
-LaTeX Warning: Reference `fig:exampleFig2' on page 3 undefined on input line 19
-0.
-
 <fig1.jpg, id=18, 254.3904pt x 232.2276pt>
 File: fig1.jpg Graphic file (type jpg)
  <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg used on input line 196.
+Package pdftex.def Info: fig1.jpg used on input line 192.
 (pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 197.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 193.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 197.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 193.
 
 <fig2.jpg, id=19, 205.7286pt x 234.1548pt>
 File: fig2.jpg Graphic file (type jpg)
  <use fig2.jpg>
-Package pdftex.def Info: fig2.jpg used on input line 203.
+Package pdftex.def Info: fig2.jpg used on input line 199.
 (pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 205.
-
-
-LaTeX Warning: Reference `sec:figs' on page 3 undefined on input line 205.
-
-
-LaTeX Warning: Reference `sec:figs' on page 3 undefined on input line 205.
 
 <table.jpg, id=20, 365.2044pt x 217.2918pt>
 File: table.jpg Graphic file (type jpg)
  <use table.jpg>
-Package pdftex.def Info: table.jpg used on input line 221.
+Package pdftex.def Info: table.jpg used on input line 217.
 (pdftex.def)             Requested size: 298.75264pt x 177.75932pt.
-
-
-LaTeX Warning: Citation `knuth:84' on page 3 undefined on input line 236.
-
-
-LaTeX Warning: Citation `boulic:91' on page 3 undefined on input line 237.
-
-
-LaTeX Warning: Citation `smith:99' on page 3 undefined on input line 237.
-
-[3] (./sbc-template.bbl) [4 <./fig1.jpg> <./fig2.jpg>] [5 <./table.jpg>]
-(./sbc-template.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [3] [4 <./fig1.jpg> <./fig2.jpg>] (./sbc-template.bbl) [5 <./table.jpg>] (./sb
+c-template.aux) ) 
 Here is how much of TeX's memory you used:
- 4217 strings out of 493029
- 55728 string characters out of 6136234
- 137623 words of memory out of 5000000
- 7655 multiletter control sequences out of 15000+600000
- 44739 words of font info for 50 fonts, out of 8000000 for 9000
+ 4214 strings out of 493029
+ 55695 string characters out of 6136234
+ 136725 words of memory out of 5000000
+ 7653 multiletter control sequences out of 15000+600000
+ 41936 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,28p,285b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
-vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on sbc-template.pdf (5 pages, 231931 bytes).
+ 38i,8n,28p,652b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sbc-template.pdf (5 pages, 232896 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
