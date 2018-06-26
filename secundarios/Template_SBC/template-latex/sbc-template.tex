@@ -12,6 +12,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{indentfirst}
 \newcommand{\vars}{\texttt}
 \newcommand{\func}{\textrm}
 \algnewcommand\And{\textbf{and}}
@@ -49,7 +50,19 @@
 
 	
 \section{Algoritmos}
-	\begin{algorithm}
+
+\subsection{Bubble Sort}
+
+O Bubble Sort é o tipo mais antigo e mais simples usado para ordenações. Ele
+funciona comparando cada item da lista com o item do lado dele, e efetua a troca se o
+valor na posição que está sendo analisada for maior que o da posição após a dele. O
+algoritmo repete este processo até passar por todas as posições da lista. Isto faz com que
+os valores maiores “flutuem” para o final da lista, enquanto os valores menores “afundem”
+para o início da lista \cite{da2016analise}.
+	
+	Tal algoritmo usa a estrategia de troca e seu pior caso O(n$^2$) e melhor caso O(n).
+
+	\begin{algorithm}[H]
 		\caption{Bubble Sort}
 		\begin{algorithmic}[1]
 			\Function{BUBBLESORT}{$A, n$}		
@@ -67,7 +80,12 @@
 			
 		\end{algorithmic}
 	\end{algorithm}	
-	\begin{algorithm}
+	
+\subsection{Insertion Sort}
+	O algoritmo consiste em uma ordenação percorrendo o vetor da esquerda para direita, e conforme avanca, vai ordenando os valores da sua esquerda.  Possui um melhor caso em forma ordenada com complexidade de O(n) e os casos medio e pior com complexidade de O(n2) \cite{santoscomparacc}.
+
+
+	\begin{algorithm}[H]
 		\caption{Insertion Sort}
 		\begin{algorithmic}[1]
 
@@ -92,8 +110,20 @@
 
 
 
-	\begin{algorithm}
-		\caption{Quick Sort}
+
+\subsection{Quick Sort}
+
+	Em primeiro momento iremos falar sobre a função partition que é de extrema importância para o Quick Sort. 
+	
+	A  função partition elege  um  dos  elementos  da  sequência  como  elemento
+pivô.   Após  essa eleição, cada elemento da sequência é comparado com o pivô e, se for menor que o pivô, deverá ficar à esquerda desse,  se for maior que o pivô,  deverá ficar à direita.   Ao final dessa etapa,  o elemento pivô fica na sua posição final da seqüência ordenada \cite{prado2005analise}. 
+	
+	Essa função irá determinar o nivel de balanciamento do quick sort que terá grande importância em seu desempenho.
+	
+	
+	
+	\begin{algorithm}[H]
+		\caption{Partition}
 		\begin{algorithmic}[1]	
 			\Function{partition}{$A, p, r$}		
 				\State $x = A[r] $	
@@ -110,7 +140,18 @@
 				\State$A[r] = temp$
 				\Return $i + 1$
 			\EndFunction
-			\\
+			\end{algorithmic}
+	\end{algorithm}
+	
+	
+	
+	O Quicksort é um algoritmo do tipo dividir para conquistar para ordenação cujo tempo de
+execução  no  pior  caso  é O(n$^2$) sobre  uma  seqüência  de  entrada  de n números pior caso do Quicksort ocorre quando todos os particionamentos de todos os níveis de recursão ocorrem da pior maneira possível, ou seja, o elemento escolhido como pivô pela função particiona for sempre maior ou o menor elemento da seqüência \cite{prado2005analise}.
+
+O melhor caso do Quicksort ocorre quando todos os particionamentos em todos os níveis de recursão forem ótimos, ou seja, quando toda vez que a função particiona for chamada, ela divida a seqüência exatamente ao meio (log$_2$n) \cite{prado2005analise}.
+\begin{algorithm}[H]
+		\caption{Quick Sort}
+		\begin{algorithmic}[1]	
 			\Function{QUICKSORT}{$A, p, r$}		
 				\If{$p < r $}
 					\State$q = PARTITION(A, p, r)$
@@ -130,115 +171,15 @@
 
 
 
-\section{General Information}
-
-All full papers and posters (short papers) submitted to some SBC conference,
-including any supporting documents, should be written in English or in
-Portuguese. The format paper should be A4 with single column, 3.5 cm for upper
-margin, 2.5 cm for bottom margin and 3.0 cm for lateral margins, without
-headers or footers. The main font must be Times, 12 point nominal size, with 6
-points of space before each paragraph. Page numbers must be suppressed.
-
-Full papers must respect the page limits defined by the conference.
-Conferences that publish just abstracts ask for \textbf{one}-page texts.
-
-\section{First Page} \label{sec:firstpage}
-
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
-
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
-
-\section{CD-ROMs and Printed Proceedings}
-
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
-
-\section{Sections and Paragraphs}
-
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
-
-\subsection{Subsections}
-
-The subsection titles must be in boldface, 12pt, flush left.
-
-\section{Figures and Captions}\label{sec:figs}
 
 
-Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
-both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
-be Helvetica, 10 point, boldface, with 6 points of space before and after each
-caption.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
-
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid
-thick, doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1)
-and the font used must also be Helvetica, 10 point, boldface, with 6 points of
-space before and after each caption.
-
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
-
-\section{Images}
-
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
-
-\section{References}
-
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
-
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
 \end{document}
+\grid
 \grid
 \grid

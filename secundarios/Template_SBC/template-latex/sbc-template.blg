@@ -1,3 +1,50 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: C:\Documents and Settings\nedel\My Documents\SBC-template\template-latex\sbc-template.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
 Database file #1: sbc-template.bib
+Warning--empty journal in prado2005analise
+Warning--empty year in santoscomparacc
+Warning--empty journal in santoscomparacc
+You've used 3 entries,
+            1935 wiz_defined-function locations,
+            482 strings with 4228 characters,
+and the built_in function-call counts, 929 in all, are:
+= -- 84
+> -- 38
+< -- 2
++ -- 12
+- -- 12
+* -- 71
+:= -- 177
+add.period$ -- 7
+call.type$ -- 3
+change.case$ -- 21
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 39
+empty$ -- 62
+format.name$ -- 17
+if$ -- 171
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 3
+newline$ -- 16
+num.names$ -- 9
+pop$ -- 23
+preamble$ -- 1
+purify$ -- 21
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 36
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 3
+while$ -- 6
+width$ -- 0
+write$ -- 34
+(There were 3 warnings)
