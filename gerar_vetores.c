@@ -9,7 +9,7 @@
 #define maiorTamanho 15000
 #define intervalo 5000
 #define quantidade 6
-#define dispersao 50000
+#define dispersao 100000
 
 int main(void){
 

@@ -107,32 +107,41 @@ for (tamanho = menorTamanho; tamanho <= maiorTamanho; tamanho+=intervalo) {
 
 FILE* csv;
 csv = fopen("outputs/atribuicoes_quase_invertido.csv","wt");
-fprintf(csv,"Bubble Sort\tInsertion Sort\tQuick Sort\t\n");
+fprintf(csv,"arquivo\ttamanho\tBubble Sort\tInsertion Sort\tQuick Sort\t\n");
 for (int j = 1; j < quantidade; j++) {
-  fprintf(csv,"5000\t%i\t",j;
+  fprintf(csv,"%i\t5000\t",j);
   for (int i = 0; i < 3; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
 
   fprintf(csv,"\n");
 }
+fprintf(csv,"\n\n\t\tmedia\n\n");
+
+
+fprintf(csv,"arquivo\ttamanho\tBubble Sort\tInsertion Sort\tQuick Sort\t\n");
 
 for (int j = 1; j < quantidade; j++) {
-  fprintf(csv,"10000\t%i\t",(j+5);
+  fprintf(csv,"%i\t10000\t",j);
   for (int i = 3 ; i < 6; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
 
   fprintf(csv,"\n");
 }
+fprintf(csv,"\n\n\t\tmedia\n\n");
+
+
+fprintf(csv,"arquivo\ttamanho\tBubble Sort\tInsertion Sort\tQuick Sort\t\n");
 for (int j = 1; j < quantidade; j++) {
-  fprintf(csv,"15000\t%i\t",(j+10);
+  fprintf(csv,"%i\t15000\t",j);
   for (int i = 6 ; i < 9; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
 
   fprintf(csv,"\n");
 }
+fprintf(csv,"\n\n\t\tmedia\n\n");
 
 
 

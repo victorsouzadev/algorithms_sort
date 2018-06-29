@@ -7,9 +7,9 @@
 //#define tamanho 9000
 #define quantidade 6
 #define quantidade 6
-#define menorTamanho 3000
-#define maiorTamanho 7000
-#define intervalo 2000
+#define menorTamanho 5000
+#define maiorTamanho 15000
+#define intervalo 5000
 
 int main(void){
 
@@ -107,32 +107,41 @@ for (tamanho = menorTamanho; tamanho <= maiorTamanho; tamanho+=intervalo) {
 
 FILE* csv;
 csv = fopen("outputs/atribuicoes_quase_ordenado.csv","wt");
-fprintf(csv,"Bubble Sort\tInsertion Sort\tQuick Sort\t\n");
+fprintf(csv,"arquivo\ttamanho\tBubble Sort\tInsertion Sort\tQuick Sort\t\n");
 for (int j = 1; j < quantidade; j++) {
-  //fprintf(csv,"%i;\n",j);
+  fprintf(csv,"%i\t5000\t",j);
   for (int i = 0; i < 3; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
 
   fprintf(csv,"\n");
 }
+fprintf(csv,"\n\n\t\tmedia\n\n");
+
+
+fprintf(csv,"arquivo\ttamanho\tBubble Sort\tInsertion Sort\tQuick Sort\t\n");
 
 for (int j = 1; j < quantidade; j++) {
-  //fprintf(csv,"%i;\n",j);
+  fprintf(csv,"%i\t10000\t",j);
   for (int i = 3 ; i < 6; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
 
   fprintf(csv,"\n");
 }
+fprintf(csv,"\n\n\t\tmedia\n\n");
+
+
+fprintf(csv,"arquivo\ttamanho\tBubble Sort\tInsertion Sort\tQuick Sort\t\n");
 for (int j = 1; j < quantidade; j++) {
-  //fprintf(csv,"%i;\n",j);
+  fprintf(csv,"%i\t15000\t",j);
   for (int i = 6 ; i < 9; i++) {
     fprintf(csv,"%li\t",tempos[i][j]);
   }
 
   fprintf(csv,"\n");
 }
+fprintf(csv,"\n\n\t\tmedia\n\n");
 
 
 

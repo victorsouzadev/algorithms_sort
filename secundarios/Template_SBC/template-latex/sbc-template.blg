@@ -6,45 +6,45 @@ Database file #1: sbc-template.bib
 Warning--empty journal in prado2005analise
 Warning--empty year in santoscomparacc
 Warning--empty journal in santoscomparacc
-You've used 3 entries,
+You've used 4 entries,
             1935 wiz_defined-function locations,
-            482 strings with 4228 characters,
-and the built_in function-call counts, 929 in all, are:
-= -- 84
-> -- 38
+            489 strings with 4486 characters,
+and the built_in function-call counts, 1340 in all, are:
+= -- 125
+> -- 56
 < -- 2
-+ -- 12
-- -- 12
-* -- 71
-:= -- 177
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 21
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 39
-empty$ -- 62
-format.name$ -- 17
-if$ -- 171
++ -- 18
+- -- 18
+* -- 110
+:= -- 249
+add.period$ -- 10
+call.type$ -- 4
+change.case$ -- 29
+chr.to.int$ -- 4
+cite$ -- 7
+duplicate$ -- 53
+empty$ -- 90
+format.name$ -- 24
+if$ -- 249
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 16
-num.names$ -- 9
-pop$ -- 23
+missing$ -- 4
+newline$ -- 21
+num.names$ -- 12
+pop$ -- 29
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 29
 quote$ -- 0
-skip$ -- 32
+skip$ -- 42
 stack$ -- 0
-substring$ -- 36
-swap$ -- 1
+substring$ -- 67
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 24
 warning$ -- 3
-while$ -- 6
+while$ -- 10
 width$ -- 0
-write$ -- 34
+write$ -- 47
 (There were 3 warnings)
